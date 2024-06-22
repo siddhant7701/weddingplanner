@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wedding Planner</div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Welcome to Our Wedding Planner</h1>
+        <p>Making your special day unforgettable.</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-boxes">
+            <div class="service-box">Service 1</div>
+            <div class="service-box">Service 2</div>
+            <div class="service-box">Service 3</div>
+            <div class="service-box">Service 4</div>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Learn more about our team and our mission.</p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery">
+                <img src="images/img1.jfif" alt="Photo 1" class="gallery-photo">
+                <img src="images/img2.jfif" alt="Photo 1" class="gallery-photo">
+                <img src="images/img3.jpg" alt="Photo 1" class="gallery-photo">
+                <img src="images/img4.jfif" alt="Photo 1" class="gallery-photo">
+                <img src="images/img1.jfif" alt="Photo 1" class="gallery-photo">
+                <img src="images/img2.jfif" alt="Photo 1" class="gallery-photo">
+                <img src="images/img3.jpg" alt="Photo 1" class="gallery-photo">
+            </div>
+            <button class="gallery-prev">&lt;</button>
+            <button class="gallery-next">&gt;</button>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="services">Select the services you want:</label>
+            <div id="services">
+                <label><input type="checkbox" name="services" value="Venue Selection"> Venue Selection</label>
+                <label><input type="checkbox" name="services" value="Catering"> Catering</label>
+                <label><input type="checkbox" name="services" value="Photography"> Photography</label>
+                <label><input type="checkbox" name="services" value="Music & Entertainment"> Music & Entertainment</label>
+                <label><input type="checkbox" name="services" value="Decorations"> Decorations</label>
+            </div>
+
+            <label for="other-services">Other services:</label>
+            <textarea id="other-services" name="other-services" rows="2" placeholder="Please specify other services you need..."></textarea>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <a href="tel:+1234567890" class="phone-icon">&#9743;</a>
+    <a href="#home" class="back-to-top">&#8679;</a>
+    <footer>
+        <p>&copy; 2024 Siddhnat Srivastava. All rights reserved.</p>
+    </footer>
+
+    <div class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
